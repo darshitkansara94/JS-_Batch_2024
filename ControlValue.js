@@ -34,4 +34,22 @@ function Addition() {
 }
 
 // Assignment
-    // Check all attribute of the control using document.getElementById()
+// Check all attribute of the control using document.getElementById()
+// MaxLength
+// MinLength
+// Classname
+// classList
+// length
+// disable
+
+function ChangeProperty() {
+    document.getElementById("txtValue").style.backgroundColor = "Red";
+
+    let count = document.getElementById("txtValue").value.length;
+
+    // let attr = document.getElementById("txtValue") = "email";
+
+    document.getElementById("lblPrint").innerText = count;
+
+    let disabled = document.getElementById("txtValue").disabled = true;
+}
