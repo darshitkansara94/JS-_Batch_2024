@@ -53,7 +53,47 @@ function Addition() {
     document.getElementById("btnResult").innerText = sum;
 }
 
-// Assignment : in common function
+// Assignment : in common function : Date : 10-June-2024
 //     Multiplication
 //     Substration
 //     Division
+
+// On blur event :
+// Event execute when lost focus on HTML control.
+
+// on focus event :
+// Event execute when get focus on HTML control.
+
+function Addition() {
+    let txtValue1 = document.getElementById("txtAddition1");
+    let txtvalue2 = document.getElementById("txtAddition2");
+
+    let sum = ThirdFunction(txtValue1.value, txtvalue2.value);
+    document.getElementById("btnOutput").innerText = sum;
+}
+
+function Message(msg) {
+    alert(msg);
+}
+
+function ArithmeticOperation(operationType) {
+    // Get a value from control
+    let txtVal1 = Number(document.getElementById("txtVal1").value);
+    let txtVal2 = Number(document.getElementById("txtVal2").value);
+
+    let btnAnswer = document.getElementById("btnAnswer");
+
+    //Identify operation type and based on that return output
+    if (operationType == "Addition") {
+        btnAnswer.innerText = txtVal1 + txtVal2;
+    }
+    else if (operationType == "Multiplication") {
+        btnAnswer.innerText = txtVal1 * txtVal2;
+    }
+    else if (operationType == "Substration") {
+        btnAnswer.innerText = txtVal1 - txtVal2;
+    }
+    else if (operationType == "Division") {
+        btnAnswer.innerText = txtVal1 / txtVal2;
+    }
+}
