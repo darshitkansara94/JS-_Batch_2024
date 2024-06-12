@@ -15,12 +15,33 @@
         <button type="button" onclick="SecondFunction(10,20)">Addition Function</button>
     </div>
     <div>
-        <input type="text" id="txtValue1" value="">
-        <input type="text" id="txtValue2" value="">
-        <button type="button" class="AdditionButton" onclick="Addition()">Addition2 Function</button>
-        <button type="button" id="btnResult" class="AdditionButton"></button>
+        <div>
+            <input type="text" id="txtValue1" value="">
+            <input type="text" id="txtValue2" value="">
+            <button type="button" class="AdditionButton" onclick="Addition()">Addition2 Function</button>
+            <button type="button" id="btnResult" class="AdditionButton"></button>
+        </div>
+        <!-- onblur event -->
+        <div>
+            <input type="text" id="txtAddition1" value="0" onblur="Addition()">
+            <input type="text" id="txtAddition2" value="0" onblur="Addition()">
+            <button type="button" id="btnOutput" class="AdditionButton"></button>
+        </div>
+        <!-- Arithemtic Operation -->
+        <div>
+            <input type="text" id="txtVal1" value="">
+            <input type="text" id="txtVal2" value="">
+
+            <button type="button" id="btnAddition" class="AdditionButton" onfocus="ArithmeticOperation('Addition')">Addition</button>
+            <button type="button" id="btnSubsctation" class="AdditionButton" onblur="ArithmeticOperation('Substration')">Substration</button>
+            <button type="button" id="btnDivision" class="AdditionButton" onfocus="ArithmeticOperation('Division')">Division</button>
+            <button type="button" id="btnMultiplication" class="AdditionButton" onblur="ArithmeticOperation('Multiplication')">Multiplication</button>
+
+            <button type="button" id="btnAnswer" class="AdditionButton">0</button>
+        </div>
     </div>
     <label id="lblValue"></label>
+    <!-- <button type="button" onclick="Message('This is Page1')">Click button</button> -->
 </body>
 
 </html>
