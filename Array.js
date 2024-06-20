@@ -119,7 +119,7 @@ console.log(typeof (fruitArray.join('/')));
 //     array1.concat(array2);
 
 // Example :
-const vegetableArray = ['Tomato', 'Potato', 'Chilli', 'garlic'];
+const vegetableArray = ['Tomato', 'Potato', 'Chilli', 'Garlic'];
 
 console.log(fruitArray.concat(vegetableArray));
 
@@ -136,8 +136,50 @@ console.log(fruitArray);
 //Example :
 console.log(vegetableArray.at(1));
 
-// sort
-// reverse
+// sort :
+// Sorting values in array using ascending or descemding order.
+
+// Syntax :
+//    array.sort();
+
+
+// Example:
+const mixedArray = ['Mango', '10', 'Apple', '0', 'Kiwi', '20', 'Banana'];
+console.log("Sorting Array");
+console.log(mixedArray);
+console.log(mixedArray.sort());
+
+// reverse :
+// For display array in reverse order.
+
+// Syntax :
+// array.reverse();
+
+// Example :
+console.log("Reverse Array");
+console.log(mixedArray);
+console.log(mixedArray.reverse());
+
+// Descending Order :
+const numberValue = [100, 58, 1, 95, 4, 6, 0, 98];
+
+const stringValues = ['Ice cream', 'Juice', 'Soda', 'Cococola', 'Dew', 'Sprite']; //Soda, Sprite
+
+console.log("Descending Order");
+console.log(stringValues);
+console.log(stringValues.sort().reverse());
+
 // delete
+// Delete value from specific position.
 
+// Syntax:
+// delete array[index];
 
+// Example:
+const deleteArrayValue = ['Ice cream', 'Juice', 'Soda', 'Cococola', 'Dew', 'Sprite'];
+
+console.log("Delete Array");
+console.log(deleteArrayValue);
+
+console.log(delete deleteArrayValue[1]);
+console.log(deleteArrayValue);
