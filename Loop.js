@@ -139,10 +139,53 @@ for (let str1 of str) {
 //     }
 
 // Example :
-let i = 0;
-console.log("While Loop");
-while (i < arrayVehicle.length) {
-    console.log(arrayVehicle[i]);
 
-    i++;
+// Create label
+// Create HTML element
+// Create Text
+// append text into control.
+// Property you want to assign like CSS, id, title
+// append control to body/ html page / any other control.
+
+function CreateLabel(arrayText, i) {
+    var lbl = document.createElement('label');
+
+    var text = document.createTextNode(arrayText);
+
+    lbl.id = arrayText + "_" + i;
+
+    lbl.appendChild(text);
+
+    document.body.appendChild(lbl);
+}
+function CreateArray() {
+    let i = 0;
+    console.log("While Loop");
+    while (i < arrayVehicle.length) {
+        // console.log(arrayVehicle[i]);
+        CreateLabel(arrayVehicle[i], i);
+        i++;
+    }
+}
+
+// do while loop :
+// When user want to execute first iteration every time.
+
+// Syntax :
+//     do
+//     {
+
+//     }
+//     while(condition)
+
+// Example :
+function UsingDoWhileLoop() {
+    let i = 0;
+
+    do {
+       CreateLabel(arrayVehicle[i], i);
+
+       i++;
+    }
+    while (i > arrayVehicle.length)
 }
