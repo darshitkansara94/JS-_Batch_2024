@@ -183,3 +183,60 @@ console.log(deleteArrayValue);
 
 console.log(delete deleteArrayValue[1]);
 console.log(deleteArrayValue);
+
+// Splice :
+// To add or remove element from existing array.
+
+// Syntax :
+//     array.splice(index, delete count, item);
+
+// Example :
+const foodArray = ['Pizza', 'Burger', 'Panipuri'];
+
+console.log(foodArray);
+
+// To add a new value into existing array
+foodArray.splice(1, 0, 'French fries', 'Veg Roll');
+
+console.log(foodArray);
+
+// To remove No of elements from array.
+foodArray.splice(1, 2);
+
+console.log(foodArray);
+
+// Slice :
+// Remove value from array but not affect the actual / original array.
+
+// Syntax :
+// array.slice(index, elements to be delete);
+
+// Example :
+const fruitSlice = ['Mango', 'Apple', 'Kiwi', 'Sapota', 'Pineapple'];
+debugger;
+const newFruitSlice = fruitSlice.slice(1, 4);
+
+console.log(fruitSlice);
+
+console.log(newFruitSlice);
+
+// Split :
+// Divide value into substring and return into form of array.
+// "WelTec Institute"
+// "1,1"
+
+// Syntax :
+// text.split(delimeter);
+
+// Example :
+debugger;
+let name = 'WelTec Institute Of Technology';
+
+const arrayName = name.split(" ");
+
+console.log(arrayName);
+
+
+// Asssignment :
+    // Get value from user for operation splice and slice.
+    // Split value and perform operation of splice and slice.
